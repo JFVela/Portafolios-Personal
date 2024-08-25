@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primario: #47d16e;
+  --acento: #59ebfe;
+  --hover: linear-gradient(to right, var(--primario), var(--acento));
+  --blanco: #ffffff;
+  --relleno: #1f1f21;
+  --borde: #3d3d3d;
+  --fondo: #171718;
+}
+
+/* Tipografía */
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Subtítulos */
+.subtitulo1 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.subtitulo2 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Cuerpo de texto */
+.body1 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.body2 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Botones */
+.botón {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Otros textos */
+.caption {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.badge {
+  font-weight: 400;
+  font-size: 8px;
+}
+
+/*Primer estilo*/
+body {
+  background: var(--fondo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+
+/*HEADER*/
+.header {
+  background-color: var(--relleno);
+  width: 100%;
+  padding: 18px 0 18px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--blanco);
+  padding-bottom: 5px;
+}
+
+.menu__link:hover,
+.menu__link.active {
+  border-bottom: 4px solid var(--primario);
+}
+
+.boton__contacto {
+  background-color: var(--primario);
+  color: var(--blanco);
+  border-radius: 0.5rem;
+  width: 160px;
+  padding: 16px 0 16px 0;
+}
+
+.resusmenDeMi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 30px;
+}
+
+.resusmenDeMi__texto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resusmenDeMi__titlulo {
+  color: var(--blanco);
+}
+.estilosParrafo {
+  color: var(--primario);
+}
+.resusmenDeMi__parrafo {
+  color: var(--blanco);
+}
+
+.resusmenDeMi__botones {
+  display: flex;
+  gap: 24px;
+}
+
+.resusmenDeMi__botones__proyectos {
+  color: var(--blanco);
+  background-color: var(--primario);
+  width: 169px;
+  padding: 16px 0 16px 0;
+  border-radius: 0.5rem;
+  border-color: var(--borde);
+}
+
+.resusmenDeMi__botones__CV {
+  color: var(--blanco);
+  background-color: #ffffff00;
+  width: 169px;
+  padding: 16px 0 16px 0;
+  border-radius: 0.5rem;
+  border-color: var(--blanco);
+  gap: 11px;
+}
+
+/*Acerca de mi*/
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 24px;
+  width: 70%;
+  background-color: var(--relleno);
+  border-color: var(--borde);
+  border-radius: 0.5rem;
+}
+
+.aboutMe__imagen {
+  width: 30%;
+}
+.aboutMe__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutMe__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.aboutMe__texto__titulo {
+  color: var(--primario);
+}
+
+.aboutMe__texto__parrafo {
+  color: var(--blanco);
+}
+.aboutMe__boton__mas {
+  background-color: #ffffff00;
+  width: 30%;
+  color: var(--blanco);
+  border-color: var(--blanco);
+  padding: 16px 22px 16px 22px;
+  border-radius: 0.5rem;
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+/*Mis habilidades*/
+.habilidades__titulo {
+  color: var(--primario);
+}
+
+.habilidades__grupo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px 25px;
+}
+
+.iconos {
+  width: 3rem;
+  font-size: 3rem;
+  background: var(--hover);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.habilidades__grupo__poder {
+  border-width: 1.5px;
+  border-color: var(--blanco);
+  border-style: solid;
+  border-radius: 2rem 0;
+  color: var(--blanco);
+  background-color: var(--relleno);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+
+  /* Prevención de desbordamiento de texto */
+  word-wrap: break-word; /* Fuerza el quiebre de las palabras */
+  overflow-wrap: break-word; /* Alternativa compatible con más navegadores */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el texto es demasiado largo */
+}
+
+.habilidades__boton {
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 16px 22px 16px 22px;
+  border-radius: 0.5rem;
+}
+
+.proyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+.proyectos__titulo {
+  color: var(--primario);
+}
+
+.proyectos__ejemplos {
+  background-color: aquamarine;
+  width: 80%;
+  height: 500px;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.proyectos__ejemplos__imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proyectos__boton {
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 16px 22px;
+  border-radius: 0.5rem;
+}
+
+/*Footer*/
+.pie__pagina {
+  width: 100%;
+  padding: 20px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--relleno);
+}
+.estilo__footer {
+  text-decoration: none;
+  color: var(--blanco);
+}
+.estilo__footer:hover {
+  color: var(--primario);
+}
+
+.pie__pagina__grupo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.lista {
+  list-style-type: none;
+  color: var(--primario);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lista__pequeña {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.copy {
+  width: 80%;
+  color: var(--blanco);
+  text-align: end;
+}
+.copy__texto {
+  margin-top: 10px;
+}
