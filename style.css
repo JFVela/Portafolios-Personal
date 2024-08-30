@@ -93,6 +93,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 120px;
+  cursor: url(assets/cursor.png), auto;
 }
 
 /*HEADER*/
@@ -199,6 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 32px;
 }
 .aboutMe__texto {
   display: flex;
@@ -214,7 +216,6 @@ body {
 }
 .aboutMe__boton__mas {
   background-color: #ffffff00;
-  width: 30%;
   color: var(--blanco);
   border-color: var(--blanco);
   padding: 16px 22px 16px 22px;
@@ -361,4 +362,42 @@ body {
 }
 .copy__texto {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .resusmenDeMi {
+    width: 80%;
+  }
+  .resusmenDeMi__titlulo {
+    font-size: 34px;
+    font-weight: 500;
+  }
+  .resusmenDeMi__parrafo {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .resusmenDeMi__botones {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .aboutMe {
+    flex-direction: column;
+  }
+  .aboutMe__imagen {
+    width: 100%;
+  }
+
+  .habilidades__grupo__poder {
+    width: 75%;
+  }
+
+  .proyectos {
+    text-align: center;
+  }
+  .proyectos__titulo {
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
